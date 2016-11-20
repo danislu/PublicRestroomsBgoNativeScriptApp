@@ -1,0 +1,6 @@
+framework module Pods_DoKart3 {
+  umbrella header "Pods-DoKart3-umbrella.h"
+
+  export *
+  module * { export * }
+}

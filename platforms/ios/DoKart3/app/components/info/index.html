@@ -1,0 +1,8 @@
+    <StackLayout>
+        <h1>Hei hei</h1>
+        <h2>{{ markerInfo.title }}</h2>
+        <ul *ngFor="let item of markerInfo.items">
+            <li>{{ item }}</li>
+        </ul>
+        <Button text="close" (tap)="onClose()"></Button>
+    </StackLayout>

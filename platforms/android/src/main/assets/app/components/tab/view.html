@@ -1,0 +1,17 @@
+
+<TabView #tabView xmlns="http://schemas.nativescript.org/tns.xsd">
+  <TabViewItem title="Map">
+    <ListView items="{{ glyphs }}">
+        <ListView.itemTemplate>
+            <StackLayout orientation="horizontal">
+                <Label text="{{ icon }}" class="icon"></Label>
+                <Label text="{{ code }}"></Label>
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+  </TabViewItem>
+  <TabViewItem title="Config">
+    <Label text="This is Label in Tab 2"></Label>
+  </TabViewItem>
+</TabView>
+

@@ -1,0 +1,5 @@
+<StackLayout xmlns="http://www.nativescript.org/tns.xsd">
+    <TextField [(ngModel)]="firstName"></TextField>
+    <TextField [(ngModel)]="lastName"></TextField>
+    <Button text="show" (tap)="click()"></Button>
+</StackLayout>

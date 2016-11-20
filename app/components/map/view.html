@@ -1,0 +1,10 @@
+<GridLayout xmlns="http://www.nativescript.org/tns.xsd" 
+    xmlns:maps="nativescript-google-maps-sdk">
+    <MapView
+        latitude="{{ lat | async }}" 
+        longitude="{{ lng | async }}" 
+        zoom="{{ zoom | async}}"
+        i-padding="50,50,50,50"
+        (mapReady)="onMapReady($event)"
+        (markerSelect)="onMarkerSelect($event)"></MapView>
+</GridLayout>

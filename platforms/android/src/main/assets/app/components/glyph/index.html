@@ -1,0 +1,20 @@
+<StackLayout xmlns="http://www.nativescript.org/tns.xsd">
+    <TextField [(ngModel)]="firstName"></TextField>
+    <TextField [(ngModel)]="lastName"></TextField>
+    <Button class="button" text="show" (tap)="click()"></Button>
+
+    <ScrollView>    
+        <WrapLayout orientation="horizontal" itemWidth="100" itemHeight="100">
+            <Label text="{{ glyphs.length }}"></Label>
+                <StackLayout *ngFor="let element of glyphs">
+                    <Border borderRadius="5" borderWidth="1" borderColor="#000000">
+                        <StackLayout>
+                            <Label [text]="element.icon" class="icon"></Label>
+                            <Label [text]="element.code"></Label>
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
+        </WrapLayout>
+    </ScrollView>
+    
+</StackLayout>

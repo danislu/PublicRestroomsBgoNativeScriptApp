@@ -1,0 +1,8 @@
+use_frameworks!
+
+target "DoKart3" do
+# Begin Podfile - /Users/admin/Code/nativescript/DoKart3/node_modules/nativescript-google-maps-sdk/platforms/ios/Podfile 
+ pod 'GoogleMaps' 
+ # End Podfile 
+
+end
